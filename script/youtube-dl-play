@@ -39,7 +39,7 @@ for my $url (@urls) {
 }
 
 # PODNAME:
-# ABSTRACT: Download video with youtube-dl *and* playing it while downloading
+# ABSTRACT: Download videos with youtube-dl *and* play them while downloading
 
 =head1 SYNOPSIS
 
@@ -54,7 +54,9 @@ Example:
 
 =head1 DESCRIPTION
 
-This is a wrapper for B<youtube-dl> which does the following for each argument:
+You want to download a video but want to see it while it downloads (and of
+course do not want to download it twice)? This is a wrapper for B<youtube-dl>
+which does the following for each argument:
 
 =over
 
