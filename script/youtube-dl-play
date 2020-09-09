@@ -35,7 +35,8 @@ for my $url (@urls) {
     chomp($filename);
     system({shell=>1},
            "youtube-dl", @opts_for_youtube_dl, "-o", "-", $url, \"|",
-           "mpv", "--record-file", $filename, "-");
+           "tee", $filename, \"|",
+           "mpv", "-");
 }
 
 # PODNAME:
@@ -76,15 +77,13 @@ Some caveats:
 
 =over
 
-=item * The media-player program C<mpv> is required
+=item * The media-player program C<mpv> as well as the C<tee> utility are required
 
 =item * Each command-line argument must be a video ID or video URL, not a playlist URL
 
 =item * Do not request a format that is unstreamable
 
 For example, C<<-f 135+140>> (merging of video-only 720p MP4 and audio-only AAC stream).
-
-=item * Seeking (e.g. jump-forward) during playing currently will screw up the recording
 
 =back
 
