@@ -1,3 +1,12 @@
+0.004   2020-09-09  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+	[cli youtube-dl-play]
+
+        - [grammar] Fix grammar in Abstract, add blurb in Description.
+
+
 0.003   2020-09-09  Released-By: PERLANCAR; Urgency: medium
 
 	- Add CLI: youtube-dl-play.
