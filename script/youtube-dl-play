@@ -85,9 +85,9 @@ Some caveats:
 
 =item * You should not request a format that does not stream
 
-For example, if you specify C<<-f 135+140>> (merging of video-only 720p MP4 and
-audio-only AAC stream) you will have to wait for C<youtube-dl> to download the
-whole video & audio streams and merge them before getting the video to play.
+For example, if you specify C<< -f 135+140 >> (merging of video-only 720p MP4
+and audio-only AAC stream) you will have to wait for C<youtube-dl> to download
+the whole video & audio streams and merge them before getting the video to play.
 
 =item * If you specify multiple URL's, you cannot go forward to the next video or backward to the previous
 
